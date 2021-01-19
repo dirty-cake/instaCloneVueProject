@@ -1,5 +1,6 @@
 <template>
-  <div class="button">
+  <div class="button-container">
+    <button class="button"><slot/></button>
   </div>
     
 </template>
@@ -7,9 +8,7 @@
 <script>
 export default {
   name: 'Button',
-  props: {
-
-  }
+  props: {}
 }
 </script>
 

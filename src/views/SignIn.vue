@@ -3,18 +3,21 @@
 		<img alt="inst logo" src="../assets/instagramLogo.svg" class="instagram-logo-image">
     <Input type="text" placeholder="Put your login" v-model="userName" />
     <Input type="text" placeholder="Put your password" v-model="password" />
+    <Button :onClick="login">Sign in </Button>
   </div>
     
 </template>
 
 <script>
 import Input from '../components/Input'
-import { ref } from '@vue/composition-api'
+import Button from '../components/Button'
+import { ref } from 'vue'
 
 export default {
   name: 'SignIn',
   components: {
-    Input
+    Input, 
+    Button
   },
   props: {}, 
   setup() {
@@ -32,7 +35,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.sign-in {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
 .instagram-logo-image {
   height: 51px;
   width: 175px;
