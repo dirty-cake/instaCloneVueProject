@@ -1,14 +1,19 @@
 <template>
-  <SignIn />
+  <div>
+    <SignIn />
+    <!-- <SignUp /> -->
+  </div>
 </template>
 
 <script>
 import SignIn from './views/SignIn'
+// import SignUp from './views/SignUp'
 
 export default {
   name: 'App',
   components: {
-    SignIn
+    SignIn, 
+    // SignUp
   }
 }
 </script>
@@ -16,10 +21,6 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  /* background-color: #fafafa; */
-  height: 100%;
 }
 </style>
